@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.cadastro_login{
+    height: 553px;
+    background: url(./Musica-Cadastro.jpg), url(./Musica-Cadastro.jpg);
+    background-size: 100vh;
+}
+
+.container_cadastro { 
+    width: 47%;
+    float: left;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.container_login { 
+    width: 46%;
+    float: left;
+    margin-top: 40px;
+}
+
+.input_cadastro {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 90%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+.input_login {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 90%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.formulario {
+    float: left;
+    width: 400px;
+}
+.formu {
+    float: left;
+    width: 400px;
+}
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px ;
+}
+.botão {
+    color: white;
+    background-color:  #235ca8;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}

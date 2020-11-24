@@ -1,0 +1,9 @@
+.footer {
+    background-color: rgb(40, 14, 185);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer h4 {
+    font-weight: 200;
+}
