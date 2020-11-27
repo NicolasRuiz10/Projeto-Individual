@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.acessorios {
+    background-color: #2d5a8db0;
+    padding: 20px 200px;
+    height: 35px;
+}
+
+.acessorios h1 {
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+.box_acessorios {
+    height: 600px;
+    background-color: rgb(40, 119, 184);
+}
+
+.box_acessorios img {
+    width: 80px;
+}
+
+.container1 .box-item{
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 30px ;
+}
+.container2 .box-item{
+    width: 33%;
+    float: right;
+    text-align: center;
+    margin-top: 30px ;
+}
+
+.container1 .box-item-principal{
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color: #21af61b0;
+}
+
+select {
+    border-radius: 10px;
+    background-color: #3683db;
+}
+button {
+    background-color: #3683db;
+}

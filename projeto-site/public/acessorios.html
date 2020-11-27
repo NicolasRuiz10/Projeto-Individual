@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="acessorios.css">
+    <title>InstruZone-Acessórios</title>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="container">
+                <h1><span>INSTRU</span>ZONE</h1>
+                <ul> 
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="cadastro.html">Login</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li class="current">Acessórios</li>
+                    <li>Sobre</li>
+                    <li>contato</li>
+                </ul>
+            </div>
+        </div>
+    </navbar>  
+
+    <div class="acessorios">
+        <h1>Acessórios</h1>
+    </div>
+
+    <div class="box_acessorios">
+        <div class="container1">
+
+            <div class="box-item">
+                <img id="img_1" src="./acessório1.jpg">
+                <h3 id="nome1">Pedal De Sustain Para Teclado Custom Sound CPS 10<br></h3>
+                <p><u id="preco_apagar1">Preço Comum: R$106,72</u></p>
+            </div>
+
+            <div class="box-item-principal">
+                <h3>Escolha Seu Instrumento</h3>
+                <select id="instrumento_escolher">
+                    <option value="">Selecione o Instrumento</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="violão">Violão</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="bateria">Bateria</option>
+                    <option value="contra-baixo">Contra-Baixo</option>
+                </select> <br>
+                <h3>Mostre o Preço</h3>
+                <select id="preco_sn">
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="não">Não</option>
+                </select> <br> <br>
+                <button onclick="verificar()">OK</button>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="box-item">
+            <img id="img_2" src="./acessório2.jpg">
+            <h3 id="nome2">Estante Suporte 2 Teclados Stay Torre 1300/02 Vermelha<br></h3>
+            <p><u id="preco_apagar2">Preço Comum: R$569,00</u></p>
+            </div>
+
+            <div class="box-item">
+            <img id="img_3" src="./acessório3.jpg">
+            <h3 id="nome3">Capa Teclado Soft Case Start 5/8 P Almofadada - Preto<br></h3>
+            <p><u id="preco_apagar3">Preço Comum: R$149,90</u></p>
+            </div>
+
+            <div class="box-item">
+            <img id="img_4" src="./acessório4.jpg">
+            <h3 id="nome4">CASE PARA TECLADO PROFISSIONAL<br></h3>
+            <p><u id="preco_apagar4">Preço Comum: R$649,00</u></p>
+            </div>
+
+            <div class="box-item">
+            <img id="img_5" src="./acessório5.jpg">
+            <h3 id="nome5">Suporte Partitura Estante Pedestal Cavalete Bolsa Ferro<br></h3>
+            <p><u id="preco_apagar5">Preço Comum: R$75,93</u></p>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <h4>Feito por Nicolas Ruiz &copy; 2020 <br>
+                    RA: 01202048 <br>
+                    E-mail: nicolas.xavier@bandtec.com.br</h4>
+                </div>
+            </div>
+        </footer>
+    
+
+</body>
+</html>
+
+<script>
+function verificar() {
+        var tipo_instrumento = instrumento_escolher.value;
+        var preco = preco_sn.value;
+        
+            if (tipo_instrumento == "") {
+                 alert('Selecione o Instrumento')
+            }
+            if ((tipo_instrumento == "violão"||tipo_instrumento == "teclado"||tipo_instrumento == "guitarra"||tipo_instrumento == "bateria"||tipo_instrumento == "contra-baixo") && preco=="") {
+                alert('Selecione o Valor')
+            }
+            
+            if (tipo_instrumento=="teclado" && preco =="sim") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+
+            } else if(tipo_instrumento=="teclado" && preco =="não") {
+                pimg_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "";/*Apagar o Preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "";/*Apagar o Preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "";/*Apagar o Preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "";/*Apagar o Preço*/
+            }
+            if (tipo_instrumento=="violão" && preco =="sim") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+
+            } else if(tipo_instrumento=="violão" && preco =="não") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "";/*Apagar o Preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "";/*Apagar o Preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "";/*Apagar o Preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "";/*Apagar o Preço*/
+            }
+
+            if (tipo_instrumento=="guitarra" && preco =="sim") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+
+            } else if(tipo_instrumento=="guitarra" && preco =="não") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = ""; /*Apagar o Preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = ""; /*Apagar o Preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = ""; /*Apagar o Preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = ""; /*Apagar o Preço*/
+            }
+
+            if (tipo_instrumento=="bateria" && preco =="sim") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+
+            } else if(tipo_instrumento=="bateria" && preco =="não") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "";/*Apagar o Preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "";/*Apagar o Preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "";/*Apagar o Preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "";/*Apagar o Preço*/
+            }
+
+            if (tipo_instrumento=="contra-baixo" && preco =="sim") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+
+            } else if(tipo_instrumento=="contra-baixo" && preco =="não") {
+                img_1.src = ''; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
+                img_2.src = '';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "";/*Apagar o Preço*/
+                img_3.src = '';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "";/*Apagar o Preço*/
+                img_4.src = '';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "";/*Apagar o Preço*/
+                img_5.src = '';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "";/*Apagar o Preço*/
+            }
+    }
+
+</script>
