@@ -7,40 +7,45 @@ body {
     padding: 20px 200px;
     height: 35px;
 }
-
 .acessorios h1 {
     color: white;
     margin: 0;
     font-weight: 400;
     text-align: center;
 }
+
 .box_acessorios {
-    height: 600px;
-    background-color: rgb(40, 119, 184);
+    display: block;
+    height: 250px;
+    background-color:  rgba(50, 159, 179, 0.966);
 }
 
 .box_acessorios img {
     height: 100px;
 }
 
-.container1 .box-item{
-    width: 33%;
-    float: left;
-    text-align: center;
-    margin-top: 30px ;
-}
-.container2 .box-item{
-    width: 33%;
-    float: right;
-    text-align: center;
-    margin-top: 30px ;
+.box_acessorios2 {
+    display: block;
+    height: 290px;
+    background-color: rgba(50, 159, 179, 0.966);
 }
 
-.container1 .box-item-principal{
+.box_acessorios2 img {
+    height: 90px;
+}
+.box-item{
     width: 33%;
     float: left;
     text-align: center;
-    background-color: #21af61b0;
+    margin-top: 30px ;
+}
+.box-item-principal{
+    border:solid 1px;
+    border-radius:10px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color:  rgb(63, 152, 224);
 }
 
 select {
@@ -49,4 +54,7 @@ select {
 }
 button {
     background-color: #3683db;
+}
+h3{
+    text-transform: uppercase;
 }

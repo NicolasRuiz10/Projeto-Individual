@@ -5,7 +5,7 @@ body {
 }
 .banner {
     height: 400px;
-    background: #33ff00b2 url(./WhatsApp\ Image\ 2020-11-23\ at\ 14.54.14.jpeg) no-repeat scroll;
+    background:#06ecbae0 url(./WhatsApp\ Image\ 2020-11-23\ at\ 14.54.14.jpeg) no-repeat scroll;
     background-size: contain;
     text-align: right;
 }
@@ -14,7 +14,7 @@ body {
     padding-top: 150px; /*corrigido*/
     margin: 0;
     font-size: 48px;
-    color: rgb(82, 147, 201)
+    color: rgb(82, 147, 201);
 }
 
 .banner p {
@@ -23,7 +23,7 @@ body {
     font-size: 18px;
 }
 .banner button {
-    background-color: rgb(0, 255, 221);
+    background-color: rgba(6, 58, 51, 0.842);
     border: 0;
     padding: 10px 20px;
 }

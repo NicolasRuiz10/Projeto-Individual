@@ -30,8 +30,6 @@
     </div>
 
     <div class="box_acessorios">
-        <div class="container1">
-
             <div class="box-item">
                 <img id="img_1" src="./acessório1.jpg">
                 <h3 id="nome1">Pedal De Sustain Para Teclado Custom Sound CPS 10<br></h3>
@@ -56,24 +54,24 @@
                 </select> <br> <br>
                 <button onclick="verificar()">OK</button>
             </div>
+    
+            <div class="box-item">
+                <img id="img_2" src="./acessório2.jpg">
+                <h3 id="nome2">Estante Suporte 2 Teclados Stay Torre 1300/02 Vermelha<br></h3>
+                <p><u id="preco_apagar2">Preço Comum: R$569,00</u></p>
+            </div>
         </div>
-        <div class="container1">
+    <div class="box_acessorios2">
             <div class="box-item">
-            <img id="img_2" src="./acessório2.jpg">
-            <h3 id="nome2">Estante Suporte 2 Teclados Stay Torre 1300/02 Vermelha<br></h3>
-            <p><u id="preco_apagar2">Preço Comum: R$569,00</u></p>
+                <img id="img_3" src="./acessório3.jpg">
+                <h3 id="nome3">Capa Teclado Soft Case Start 5/8 P Almofadada - Preto<br></h3>
+                <p><u id="preco_apagar3">Preço Comum: R$149,90</u></p>
             </div>
 
             <div class="box-item">
-            <img id="img_3" src="./acessório3.jpg">
-            <h3 id="nome3">Capa Teclado Soft Case Start 5/8 P Almofadada - Preto<br></h3>
-            <p><u id="preco_apagar3">Preço Comum: R$149,90</u></p>
-            </div>
-
-            <div class="box-item">
-            <img id="img_4" src="./acessório4.jpg">
-            <h3 id="nome4">CASE PARA TECLADO PROFISSIONAL<br></h3>
-            <p><u id="preco_apagar4">Preço Comum: R$649,00</u></p>
+                <img id="img_4" src="./acessório4.jpg">
+                <h3 id="nome4">CASE PARA TECLADO PROFISSIONAL<br></h3>
+                <p><u id="preco_apagar4">Preço Comum: R$649,00</u></p>
             </div>
 
             <div class="box-item">
@@ -81,7 +79,6 @@
             <h3 id="nome5">Suporte Partitura Estante Pedestal Cavalete Bolsa Ferro<br></h3>
             <p><u id="preco_apagar5">Preço Comum: R$75,93</u></p>
             </div>
-        </div>
     </div>
         <footer>
             <div class="footer">
@@ -110,176 +107,176 @@ function verificar() {
             }
             
             if (tipo_instrumento=="teclado" && preco =="sim") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_1.src = './acessório1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Pedal De Sustain Para Teclado Custom Sound CPS 10<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$106,72"; /*Colocar Aqui o novo preço*/
+                img_2.src = './acessório2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Estante Suporte 2 Teclados Stay Torre 1300/02 Vermelha<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$569,00";/*Colocar Aqui o novo preço*/
+                img_3.src = './acessório3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Capa Teclado Soft Case Start 5/8 P Almofadada - Preto<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$149,90";/*Colocar Aqui o novo preço*/
+                img_4.src = './acessório4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "CASE PARA TECLADO PROFISSIONAL<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$649,00";/*Colocar Aqui o novo preço*/
+                img_5.src = './acessório5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Suporte Partitura Estante Pedestal Cavalete Bolsa Ferro<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$75,93";/*Colocar Aqui o novo preço*/
 
             } else if(tipo_instrumento=="teclado" && preco =="não") {
-                pimg_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_1.src = './acessório1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Pedal De Sustain Para Teclado Custom Sound CPS 10<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_2.src = './acessório2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Estante Suporte 2 Teclados Stay Torre 1300/02 Vermelha<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar2.innerHTML = "";/*Apagar o Preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_3.src = './acessório3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Capa Teclado Soft Case Start 5/8 P Almofadada - Preto<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar3.innerHTML = "";/*Apagar o Preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_4.src = './acessório4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "CASE PARA TECLADO PROFISSIONAL<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar4.innerHTML = "";/*Apagar o Preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_5.src = './acessório5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Suporte Partitura Estante Pedestal Cavalete Bolsa Ferro<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar5.innerHTML = "";/*Apagar o Preço*/
             }
             if (tipo_instrumento=="violão" && preco =="sim") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_1.src = './acessorio-violao1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Suporte Para Instrumentos De Corda<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$60,00"; /*Colocar Aqui o novo preço*/
+                img_2.src = './acessorio-violao2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Capotraste violão nylon aço<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$19,90";/*Colocar Aqui o novo preço*/
+                img_3.src = './acessorio-violao3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Protetor Ponta De Dedo Silicone<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$17,50";/*Colocar Aqui o novo preço*/
+                img_4.src = './acessorio-violao4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Estante 3 Guitarra violão Baixo<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$275,00";/*Colocar Aqui o novo preço*/
+                img_5.src = './acessorio-violao5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Correias de violão Bordada<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$73,99";/*Colocar Aqui o novo preço*/
 
             } else if(tipo_instrumento=="violão" && preco =="não") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_1.src = './acessorio-violao1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Suporte Para Instrumentos De Corda<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_2.src = './acessorio-violao2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Capotraste violão nylon aço<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar2.innerHTML = "";/*Apagar o Preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_3.src = './acessorio-violao3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Protetor Ponta De Dedo Silicone<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar3.innerHTML = "";/*Apagar o Preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_4.src = './acessorio-violao4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Estante 3 Guitarra violão Baixo<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar4.innerHTML = "";/*Apagar o Preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_5.src = './acessorio-violao5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Correias de violão Bordada<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar5.innerHTML = "";/*Apagar o Preço*/
             }
 
             if (tipo_instrumento=="guitarra" && preco =="sim") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_1.src = './acessorio-guitarra1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Suporte De Celular Para Guitarra<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$40,88"; /*Colocar Aqui o novo preço*/
+                img_2.src = './acessorio-guitarra2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Kit Acessórios Guitarra C/ Cordas D'addario + Capo Fender<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$199,90";/*Colocar Aqui o novo preço*/
+                img_3.src = './acessorio-guitarra3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Suporte de Parede para Guitarra<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$85,49";/*Colocar Aqui o novo preço*/
+                img_4.src = './acessorio-guitarra4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Capotraste Guitarra nylon/aço<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$19,90";/*Colocar Aqui o novo preço*/
+                img_5.src = './acessorio-guitarra5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Encordoamento P/ Guitarra 0.10 – Nig<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$26,11";/*Colocar Aqui o novo preço*/
 
             } else if(tipo_instrumento=="guitarra" && preco =="não") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_1.src = './acessorio-guitarra1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Suporte De Celular Para Guitarra<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_2.src = './acessorio-guitarra2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Kit Acessórios Guitarra C/ Cordas D'addario + Capo Fender<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar2.innerHTML = ""; /*Apagar o Preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_3.src = './acessorio-guitarra3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Suporte de Parede para Guitarra<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar3.innerHTML = ""; /*Apagar o Preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_4.src = './acessorio-guitarra4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Capotraste Guitarra nylon/aço<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar4.innerHTML = ""; /*Apagar o Preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_5.src = './acessorio-guitarra5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Encordoamento P/ Guitarra 0.10 – Nig<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar5.innerHTML = ""; /*Apagar o Preço*/
             }
 
             if (tipo_instrumento=="bateria" && preco =="sim") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_1.src = './acessorio-bateria1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Fone de Ouvido de Qkz CK5 - HiFi Heavy Bass<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$43,72"; /*Colocar Aqui o novo preço*/
+                img_2.src = './acessorio-bateria2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Banco p/ Bateria Premium<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$485,00";/*Colocar Aqui o novo preço*/
+                img_3.src = './acessorio-bateria3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "12 peças de bateria amortecedor silenciador<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$90,50";/*Colocar Aqui o novo preço*/
+                img_4.src = './acessorio-bateria4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Par Baqueta Injetada Em Nylon<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$29,00";/*Colocar Aqui o novo preço*/
+                img_5.src = './acessorio-bateria5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "KIT DE PRATOS ZILDJIAN PLANET Z<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$1.279,90";/*Colocar Aqui o novo preço*/
 
             } else if(tipo_instrumento=="bateria" && preco =="não") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_1.src = './acessorio-bateria1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Fone de Ouvido de Qkz CK5 - HiFi Heavy Bass<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_2.src = './acessorio-bateria2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Banco p/ Bateria Premium<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar2.innerHTML = "";/*Apagar o Preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_3.src = './acessorio-bateria3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "12 peças de bateria amortecedor silenciador<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar3.innerHTML = "";/*Apagar o Preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_4.src = './acessorio-bateria4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Par Baqueta Injetada Em Nylon<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar4.innerHTML = "";/*Apagar o Preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_5.src = './acessorio-bateria5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "KIT DE PRATOS ZILDJIAN PLANET Z<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar5.innerHTML = "";/*Apagar o Preço*/
             }
 
             if (tipo_instrumento=="contra-baixo" && preco =="sim") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar1.innerHTML = "Preço Comum: R$"; /*Colocar Aqui o novo preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar2.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar3.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar4.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
-                        preco_apagar5.innerHTML = "Preço Comum: R$";/*Colocar Aqui o novo preço*/
+                img_1.src = './acessorio-contra-baixo1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Apoio Contrabaixo Acústico Paganini Ponteira<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar1.innerHTML = "Preço Comum: R$21,84"; /*Colocar Aqui o novo preço*/
+                img_2.src = './acessorio-contra-baixo2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Suporte Ask G3s Chão Com Trava<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar2.innerHTML = "Preço Comum: R$56,90";/*Colocar Aqui o novo preço*/
+                img_3.src = './acessorio-contra-baixo3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Instrumento de cordas baixo elétrico colorido<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar3.innerHTML = "Preço Comum: R$34,00";/*Colocar Aqui o novo preço*/
+                img_4.src = './acessorio-contra-baixo4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Capa Bag Case Contra Baixo Acolchoada Impermeável<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar4.innerHTML = "Preço Comum: R$75,90";/*Colocar Aqui o novo preço*/
+                img_5.src = './acessorio-contra-baixo5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Pedal para Contra-Baixo Fuhrmann<br>"; /*Colocar Aqui o novo nome*/
+                        preco_apagar5.innerHTML = "Preço Comum: R$282,15";/*Colocar Aqui o novo preço*/
 
             } else if(tipo_instrumento=="contra-baixo" && preco =="não") {
-                img_1.src = ''; /*Colocar Aqui a nova foto*/
-                    nome1.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_1.src = './acessorio-contra-baixo1.jpg'; /*Colocar Aqui a nova foto*/
+                    nome1.innerHTML = "Apoio Contrabaixo Acústico Paganini Ponteira<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar1.innerHTML = ""; /*Apagar o Preço*/
-                img_2.src = '';/*Colocar Aqui a nova foto*/
-                    nome2.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_2.src = './acessorio-contra-baixo2.jpg';/*Colocar Aqui a nova foto*/
+                    nome2.innerHTML = "Suporte Ask G3s Chão Com Trava<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar2.innerHTML = "";/*Apagar o Preço*/
-                img_3.src = '';/*Colocar Aqui a nova foto*/
-                    nome3.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_3.src = './acessorio-contra-baixo3.jpg';/*Colocar Aqui a nova foto*/
+                    nome3.innerHTML = "Instrumento de cordas baixo elétrico colorido<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar3.innerHTML = "";/*Apagar o Preço*/
-                img_4.src = '';/*Colocar Aqui a nova foto*/
-                    nome4.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_4.src = './acessorio-contra-baixo4.jpg';/*Colocar Aqui a nova foto*/
+                    nome4.innerHTML = "Capa Bag Case Contra Baixo Acolchoada Impermeável<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar4.innerHTML = "";/*Apagar o Preço*/
-                img_5.src = '';/*Colocar Aqui a nova foto*/
-                    nome5.innerHTML = ""; /*Colocar Aqui o novo nome*/
+                img_5.src = './acessorio-contra-baixo5.jpg';/*Colocar Aqui a nova foto*/
+                    nome5.innerHTML = "Pedal para Contra-Baixo Fuhrmann<br>"; /*Colocar Aqui o novo nome*/
                         preco_apagar5.innerHTML = "";/*Apagar o Preço*/
             }
     }
