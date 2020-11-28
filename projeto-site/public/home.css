@@ -5,7 +5,7 @@ body {
 }
 .banner {
     height: 400px;
-    background:#06ecbae0 url(./WhatsApp\ Image\ 2020-11-23\ at\ 14.54.14.jpeg) no-repeat scroll;
+    background:#06ecbae0 url(./musicas/WhatsApp\ Image\ 2020-11-23\ at\ 14.54.14.jpeg) no-repeat scroll;
     background-size: contain;
     text-align: right;
 }

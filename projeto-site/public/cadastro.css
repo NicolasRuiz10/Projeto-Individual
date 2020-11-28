@@ -4,7 +4,7 @@ body {
 }
 .cadastro_login{
     height: 553px;
-    background: url(./Musica-Cadastro.jpg), url(./Musica-Cadastro.jpg);
+    background: url(./musicas/Musica-Cadastro.jpg), url(./musicas/Musica-Cadastro.jpg);
     background-size: 100vh;
 }
 
