@@ -3,8 +3,9 @@ body {
     margin: 0;
     background-color: #23b9bedc;
 }
+/*Parte do Começo com a foto e Frase Inicila da pag.*/
 .banner {
-    height: 400px;
+    height: 350px;
     background:#06ecbae0 url(./Musicas/WhatsApp\ Image\ 2020-11-23\ at\ 14.54.13.jpeg) no-repeat scroll;
     background-size: contain;
     text-align: right;
@@ -12,7 +13,7 @@ body {
 }
 
 .banner h1 {
-    padding-top: 150px;
+    padding-top: 30px;
     margin: 0;
     font-size: 48px;
     color: rgb(82, 147, 201);
@@ -23,12 +24,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
-.banner button {
-    background-color: rgba(6, 58, 51, 0.842);
-    border: 0;
-    padding: 10px 20px;
-}
-
+/*Parte da Frase dos Sonhos*/
 .imagem1 {
     display: flex;
     height: 200px;
@@ -59,13 +55,12 @@ body {
     font-weight: 400;
     text-align: center;
 }
-.nome {
+/*Parte Sobre- Missão Valores etc..*/
+.nome_sobre {
     background-color: #1f2bcfbd;
     padding: 20px 200px;
     height: 30px;
     border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
-}
-.nome {
     color: white;
     margin: 0;
     font-weight: 400;
@@ -73,11 +68,15 @@ body {
     padding-bottom: 80px;
 }
 .box_sobre {
-    height: 420px;
+    height: 470px;
     background-color:#1e75d8b0;
+    border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
 }
 .box_sobre img {
     width: 80px;
+}
+.container1 p {
+    background-color: #e95c1b;
 }
 .container1 .box-sobre{
     width: 33%;
@@ -97,3 +96,157 @@ body {
     text-align: center;
     margin-top: 30px ;
 }
+/*Parte da Familia- Texto Inicial*/
+.nome_familia {
+    background-color: #e61e17bd;
+    border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
+    border-top: 1px rgba(40, 14, 185, 0.623) solid;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+/*Parte da Familia*/
+.box_familia {
+    height: 480px;
+    background-color:  rgb(2, 162, 255);
+}
+
+.box_familia img {
+    height: 100px;
+}
+
+.container_familia .box-item-familia{
+    width: 32%;
+    float: left;
+    text-align: center;
+    margin-top: 30px ;
+    
+}
+.container_familia .box-item-principal-familia{
+    border:solid 1px;
+    border-radius:10px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color:  rgb(63, 152, 224);
+}
+
+.container_familia2 .box-item-familia{
+    width: 33%;
+    float: right;
+    text-align: center;
+    margin-top: 30px ;
+    
+}
+select {
+    border-radius: 10px;
+    background-color: #3683db;
+}
+button {
+    background-color: #3683db;
+}
+h3{
+    text-transform: uppercase;
+}
+
+/*Amigos*/
+.nome_amigos {
+    background-color:#e61e17bd;
+    border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
+    border-top: 1px rgba(40, 14, 185, 0.623) solid;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+.box_amigos {
+    height: 480px;
+    background-color: rgb(2, 162, 255);
+    border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
+}
+
+.box_amigos img {
+    height: 100px;
+}
+
+.container_amigos .box-item-amigos{
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 30px ;
+    
+}
+.container_amigos .box-item-principal-amigos{
+    border:solid 1px;
+    border-radius:10px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color:  rgb(63, 152, 224);
+}
+
+.container_amigos2 .box-item-amigos{
+    width: 33%;
+    float: right;
+    text-align: center;
+    margin-top: 30px ;
+    
+}
+select {
+    border-radius: 10px;
+    background-color: #3683db;
+}
+button {
+    background-color: #3683db;
+}
+h3{
+    text-transform: uppercase;
+}
+
+/*Parte da Conquista 1 e 3*/
+.imagem1-3 {
+    display: end;
+    height: 200px;
+    
+    float: left;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 17px;
+}
+/*Parte da Conquista 2*/
+.imagem2 {
+    display: flex;
+    height: 200px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 22px;
+}
+/*Conquistas Gerais*/
+.frase_inicial {
+    background-color: #1e75d8b0;
+    padding: 20px 200px;
+    height: 200px;
+    margin-left: 150px;
+    border-bottom: 2px rgba(248, 14, 14, 0.623) solid;
+    border-radius: 10px;
+}
+.frase_inicial h1 {
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    text-align: end;
+
+}
+.frase_inicial h4 {
+    display: block;
+    margin-block-start: 0;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-weight: 400;
+    text-align: end;
+}
+
+
+
