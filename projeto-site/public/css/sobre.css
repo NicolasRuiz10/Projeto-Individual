@@ -6,7 +6,7 @@ body {
 /*Parte do Começo com a foto e Frase Inicila da pag.*/
 .banner {
     height: 350px;
-    background:#06ecbae0 url(./Musicas/WhatsApp\ Image\ 2020-11-23\ at\ 14.54.13.jpeg) no-repeat scroll;
+    background:#06ecbae0 url(../Musicas/WhatsApp\ Image\ 2020-11-23\ at\ 14.54.13.jpeg) no-repeat scroll;
     background-size: contain;
     text-align: right;
     border-bottom: 4px rgb(40, 14, 185) solid;
@@ -108,7 +108,7 @@ body {
 }
 /*Parte da Familia*/
 .box_familia {
-    height: 480px;
+    height: 520px;
     background-color:  rgb(2, 162, 255);
 }
 
@@ -161,7 +161,7 @@ h3{
     text-align: center;
 }
 .box_amigos {
-    height: 480px;
+    height: 540px;
     background-color: rgb(2, 162, 255);
     border-bottom: 2px rgba(40, 14, 185, 0.623) solid;
 }
